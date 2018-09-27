@@ -8,57 +8,57 @@ declare namespace cc {
   /**
    * @const {number} TMX_PROPERTY_NONE
    */
-  export const TMX_PROPERTY_NONE: number
+  export const TMX_PROPERTY_NONE: number;
 
   /**
    * @const {number} TMX_PROPERTY_MAP
    */
-  export const TMX_PROPERTY_MAP: number
+  export const TMX_PROPERTY_MAP: number;
 
   /**
    * @const {number} TMX_PROPERTY_LAYER
    */
-  export const TMX_PROPERTY_LAYER: number
+  export const TMX_PROPERTY_LAYER: number;
 
   /**
    * @const {number} TMX_PROPERTY_OBJECTGROUP
    */
-  export const TMX_PROPERTY_OBJECTGROUP: number
+  export const TMX_PROPERTY_OBJECTGROUP: number;
 
   /**
    * @const {number} TMX_PROPERTY_OBJECT
    */
-  export const TMX_PROPERTY_OBJECT: number
+  export const TMX_PROPERTY_OBJECT: number;
 
   /**
    * @const {number} TMX_PROPERTY_TILE
    */
-  export const TMX_PROPERTY_TILE: number
+  export const TMX_PROPERTY_TILE: number;
 
   /**
    * @const {number} TMX_TILE_HORIZONTAL_FLAG
    */
-  export const TMX_TILE_HORIZONTAL_FLAG: number
+  export const TMX_TILE_HORIZONTAL_FLAG: number;
 
   /**
    * @const {number} TMX_TILE_VERTICAL_FLAG
    */
-  export const TMX_TILE_VERTICAL_FLAG: number
+  export const TMX_TILE_VERTICAL_FLAG: number;
 
   /**
    * @const {number} TMX_TILE_DIAGONAL_FLAG
    */
-  export const TMX_TILE_DIAGONAL_FLAG: number
+  export const TMX_TILE_DIAGONAL_FLAG: number;
 
   /**
    * @const {number} TMX_TILE_FLIPPED_ALL
    */
-  export const TMX_TILE_FLIPPED_ALL: number
+  export const TMX_TILE_FLIPPED_ALL: number;
 
   /**
    * @const {number} TMX_TILE_FLIPPED_MASK
    */
-  export const TMX_TILE_FLIPPED_MASK: number
+  export const TMX_TILE_FLIPPED_MASK: number;
 
   /**
    * <p>cc.TMXLayerInfo contains the information about the layers like: <br />
@@ -83,38 +83,38 @@ declare namespace cc {
     /**
      * @member {boolean} visible
      */
-    visible: boolean     
-     
+    visible: boolean
+
     /**
      * @member {boolean} ownTiles
      */
     ownTiles: boolean
-    
+
     /**
      * @member {number} offset
      */
     offset: number
 
     constructor()
-    
+
     /**
      * @const {number} ATTRIB_NONE
      */
     static ATTRIB_NONE: number
-    
+
     /**
      * @const {number} ATTRIB_BASE64
      */
     static ATTRIB_BASE64: number
 
     /**
-     * @const {number} ATTRIB_GZIP 
+     * @const {number} ATTRIB_GZIP
      */
     static ATTRIB_GZIP: number
     /**
-     * @const {number} ATTRIB_ZLIB 
+     * @const {number} ATTRIB_ZLIB
      */
-    static ATTRIB_ZLIB: number    
+    static ATTRIB_ZLIB: number
   }
 
   /**
@@ -191,7 +191,7 @@ declare namespace cc {
    * @extends cc.Class
    */
   class SAXParser {}
-  
+
   /**
     *
     * cc.plistParser is a singleton object for parsing plist files
@@ -254,31 +254,31 @@ declare namespace cc {
      * @member {number} orientation
      */
     orientation: number
-    
+
     /**
      * Parent element
      * @member {any} parentElement
      */
     parentElement: any
-    
+
     /**
      * Parent GID
      * @member {number} parentGID
      */
     parentGID: number
-    
+
     /**
      * Layer attributes.
      * @member {any} layerAttrs
      */
     layerAttrs: any
-    
+
     /**
      * Is reading storing characters stream.
      * @member {boolean} storingCharacters
      */
     storingCharacters: boolean
-    
+
     /**
      * TMX file name.
      * @member {string} tmxFileName
@@ -298,7 +298,7 @@ declare namespace cc {
      * @param {string} resourcePath  If tmxFile is a file name ,it is not required.If tmxFile is content string ,it is must required.
      */
     constructor(tmxFile: string, resourcePath: string)
-    
+
     /**
      * Map width & height
      * @return {cc.Size}
@@ -404,24 +404,24 @@ declare namespace cc {
      * Width of the map
      * @member {number} mapWidth
      */
-    mapWidth: number             
+    mapWidth: number
 
     /**
      * Height of the map
      * @member {number} mapHeight
      */
-    mapHeight: number             
+    mapHeight: number
 
     /**
      * Width of a tile
      * @member {number} tileWidth
      */
-    tileWidth: number             
+    tileWidth: number
 
     /**
      * Height of a tile
      * @member {number} tileHeight
      */
-    tileHeight: number             
+    tileHeight: number
   }
 }

@@ -1136,7 +1136,7 @@ declare namespace cc {
         export function isPaused(): boolean;
 
         /**
-         * Pause the game. 
+         * Pause the game.
          */
         export function pause(): void;
 

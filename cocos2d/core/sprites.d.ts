@@ -20,13 +20,15 @@ declare namespace cc {
      * </p>
      * @class
      * @extends cc.Class
-     * @param spriteFrame
-     * @param delayUnits
-     * @param userInfo
-     * @returns {AnimationFrame}
      */
     export class AnimationFrame extends Class {
         public ctor():void;
+
+        /**
+         * @param spriteFrame
+         * @param delayUnits
+         * @param userInfo
+         */
         public ctor(spriteFrame:SpriteFrame, delayUnits:number, userInfo:any):void;
 
         /**
@@ -249,7 +251,7 @@ declare namespace cc {
          * Initializes a cc.Animation with frames and a delay between frames, do not call this method yourself, please pass parameters to constructor to initialize.
          * @param {Array} frames
          * @param {Number} delay
-         * @param {Number} [loops=1]
+         * @param {Number} loops default: 1
          */
         public initWithSpriteFrames(frames:SpriteFrame[], delay:number, loops?:number):boolean;
 
@@ -996,7 +998,6 @@ declare namespace cc {
          * @param {cc.Texture2D} texture
          */
         public setTexture(texture:Texture2D):void;
-
     }
 
 

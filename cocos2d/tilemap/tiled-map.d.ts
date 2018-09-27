@@ -4,26 +4,26 @@ declare namespace cc {
   // +--------------------------------------------------------------------------------
   // + File: cocos2d/tilemap/CCTMXTiledMap.js
   // +--------------------------------------------------------------------------------
-    
+
   /**
    Orthogonal orientation
   * @const {number} TMX_ORIENTATION_ORTHO
   */
-  export const TMX_ORIENTATION_ORTHO: number
+  export const TMX_ORIENTATION_ORTHO: number;
 
   /**
    * Hexagonal orientation
    * @const {number} TMX_ORIENTATION_HEX
    */
 
-  export const TMX_ORIENTATION_HEX: number
+  export const TMX_ORIENTATION_HEX: number;
 
   /**
    * Isometric orientation
    * @const {number} TMX_ORIENTATION_ISO
    */
-  export const TMX_ORIENTATION_ISO: number
-  
+  export const TMX_ORIENTATION_ISO: number;
+
   /**
    * <p>cc.TMXTiledMap knows how to parse and render a TMX map.</p>
    *
@@ -62,7 +62,7 @@ declare namespace cc {
      * @member {any[]} properties
      */
     properties: any[]
-    
+
     /**
      * Map orientation
      * @member {number} mapOrientation
@@ -118,7 +118,7 @@ declare namespace cc {
      * @param {cc.Size} Var
      */
     setMapSize(Var: Size): void
-    
+
     /**
      * Gets the tile size.
      * @return {cc.Size}
@@ -149,7 +149,7 @@ declare namespace cc {
      * @return {boolean} Whether the initialization was successful.
      */
     initWithXML(tmxString: string, resourcePath: string): boolean
-    
+
     /**
      * Return All layers array.
      * @returns {TMXLayer[]}
@@ -183,5 +183,5 @@ declare namespace cc {
      * @return {any}
      */
     getPropertiesForGID(GID: number): any
-  }  
+  }
 }

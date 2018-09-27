@@ -367,7 +367,7 @@ declare namespace cc {
      * @param {cc.Point} b b is the endpoint for the first line P1 = (p1 - p2).
      * @param {cc.Point} c c is the startpoint for the second line P2 = (p3 - p4).
      * @param {cc.Point} d d is the endpoint for the second line P2 = (p3 - p4).
-     * @param {cc.Point} retP retP.x is the range for a hitpoint in P1 (pa = p1 + s*(p2 - p1)), 
+     * @param {cc.Point} retP retP.x is the range for a hitpoint in P1 (pa = p1 + s*(p2 - p1)),
      * retP.y is the range for a hitpoint in P3 (pa = p2 + t*(p4 - p3)).
      * @return {boolean}
      */

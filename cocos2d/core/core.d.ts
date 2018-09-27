@@ -142,8 +142,8 @@ declare namespace cc {
     ////////////////////////////////////////////////////////////////////////////////
 
     // Variable Definitions
-    var g_NumberOfDraws: number;
-    var defaultFPS: number;
+    let g_NumberOfDraws: number;
+    let defaultFPS: number;
 
     // Function Definitions
     /**
@@ -166,7 +166,7 @@ declare namespace cc {
          */
         updateProjection(): void;
     }
-    
+
     // Class Definitions
     /**
      * <p>
@@ -655,7 +655,7 @@ declare namespace cc {
     ////////////////////////////////////////////////////////////////////////////////
 
     // Variable Definitions
-    var PRIORITY_NON_SYSTEM: number;
+    const PRIORITY_NON_SYSTEM: number;
 
     // Function Definitions
 
@@ -1044,7 +1044,6 @@ declare namespace cc {
      */
         //cc.TimerTargetCallback = cc.Timer.extend({
     export class TimerTargetCallback extends Timer {
-
         constructor();
 
         /**
@@ -1078,7 +1077,6 @@ declare namespace cc {
      * @class cc.TimerTargetSelector
      */
     export class TimerTargetSelector extends Timer {
-
         constructor();
 
         /**
@@ -1128,7 +1126,7 @@ declare namespace cc {
         //export function create():Node;
 
         // Class Definitions
-        export class RenderCmd{}
+        export class RenderCmd {}
     }
 
 }

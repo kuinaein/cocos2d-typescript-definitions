@@ -4,7 +4,7 @@ declare namespace cc {
   // +--------------------------------------------------------------------------------
   // + File: cocos2d/tilemap/CCTMXObjectGroup.js
   // +--------------------------------------------------------------------------------
-  
+
   /**
    * cc.TMXObjectGroup represents the TMX object group.
    * @class
@@ -19,7 +19,7 @@ declare namespace cc {
      * @member {any[]} properties
      */
     properties: any[]
-    
+
     /**
      * Name of the group
      * @member {string} groupName

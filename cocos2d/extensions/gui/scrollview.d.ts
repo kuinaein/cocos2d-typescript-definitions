@@ -84,9 +84,9 @@ declare namespace cc {
         public getContentOffset():Point;
 
         /**
-         * Sets a new content offset. It ignores max/min offset. It just sets what's given. (just like UIKit's UIScrollView) 
+         * Sets a new content offset. It ignores max/min offset. It just sets what's given. (just like UIKit's UIScrollView)
          * You can override the animation duration with this method.
-         * 
+         *
          * @param {cc.Point} offset new offset
          * @param {Number} dt animation duration
          */
@@ -148,11 +148,11 @@ declare namespace cc {
         public setBounceable(bounceable:boolean):void;
 
         /**
-         * 
-         * size to clip. CCNode boundingBox uses contentSize directly.                   
-         * It's semantically different what it actually means to common scroll views.    
+         *
+         * size to clip. CCNode boundingBox uses contentSize directly.
+         * It's semantically different what it actually means to common scroll views.
          * Hence, this scroll view will use a separate size property.
-         * 
+         *
          */
         public getViewSize():Size;
 

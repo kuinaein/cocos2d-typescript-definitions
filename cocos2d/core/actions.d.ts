@@ -1219,7 +1219,6 @@ declare namespace cc {
      * action.easing(cc.easeExponentialInOut());
      */
     export class EaseExponentialInOut extends ActionEase {
-
         /**
          * Create a cc.EaseExponentialInOut action. Opposite with the original motion trajectory.
          * @return {cc.EaseExponentialInOut}
@@ -1552,7 +1551,6 @@ declare namespace cc {
      * action.easing(cc.easeElasticOut(period));
      */
     export class EaseElasticOut extends EaseElastic {
-
         /**
          * Create a action. Opposite with the original motion trajectory.
          * @return {cc.EaseElasticIn}
@@ -1960,7 +1958,7 @@ declare namespace cc {
          */
         public reverse():EaseBackInOut;
     }
-    
+
     //cc._easeBackInOutObj = {
     //    easing: function (time1) {
     //        var overshoot = 1.70158 * 1.525;
@@ -2006,7 +2004,6 @@ declare namespace cc {
      * action.easing(cc.easeBezierAction(0.5, 0.5, 1.0, 1.0));
      */
     export class EaseBezierAction extends ActionEase {
-
         /**
          * Constructor function, override it to extend the construction behavior, remember to call "this._super()" in the extended "ctor" function. <br />
          * Initialization requires the application of Bessel curve of action.
@@ -2946,7 +2943,8 @@ declare namespace cc {
         public ctor(isNeedCleanUp?:boolean):void;
 
         /**
-         * Initialization of the node, please do not call this function by yourself, you should pass the parameters to constructor to initialize it .
+         * Initialization of the node, please do not call this function by yourself, you should pass the parameters to constructor to initialize it
+         * .
          * @param isNeedCleanUp
          * @returns {boolean}
          */
@@ -3837,7 +3835,6 @@ declare namespace cc {
          * @returns {cc.SkewTo}
          */
         public clone():SkewTo;
-
     }
 
     /**
@@ -4055,7 +4052,7 @@ declare namespace cc {
      * var actionTo = cc.jumpTo(2, 300, 300, 50, 4);
      */
     export function jumpTo(duration:number, position:number|cc.Point, y?:number, height?:number, jumps?:number):JumpTo;
-    
+
     /**
      * @function
      * @param {Number} a

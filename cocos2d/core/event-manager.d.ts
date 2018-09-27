@@ -76,11 +76,11 @@ declare namespace cc {
         public isStopped():boolean;
 
         /**
-         * 
-         *     Gets current target of the event                                                            
-         *     note: It only be available when the event listener is associated with node.                
+         *
+         *     Gets current target of the event
+         *     note: It only be available when the event listener is associated with node.
          *          It returns 0 when the listener is associated with fixed priority.
-         * 
+         *
          * @function
          * @returns {cc.Node}  The target with which the event associates.
          */
@@ -427,12 +427,12 @@ declare namespace cc {
     // File: cocos2d/core/event-manager/CCEventListener.js
     ////////////////////////////////////////////////////////////////////////////////
     /**
-     * 
-     *     The base class of event listener.                                                                        
-     *     If you need custom listener which with different callback, you need to inherit this class.               
-     *     For instance, you could refer to EventListenerAcceleration, EventListenerKeyboard,                       
+     *
+     *     The base class of event listener.
+     *     If you need custom listener which with different callback, you need to inherit this class.
+     *     For instance, you could refer to EventListenerAcceleration, EventListenerKeyboard,
      *      EventListenerTouchOneByOne, EventListenerCustom.
-     * 
+     *
      * @class
      * @extends cc.Class
      */
@@ -591,12 +591,12 @@ declare namespace cc {
     // File: cocos2d/core/event-manager/CCEventManager.js
     ////////////////////////////////////////////////////////////////////////////////
     /**
-     * 
-     *  cc.eventManager is a singleton object which manages event listener subscriptions and event dispatching. 
-     *                                                                                                              
-     *  The EventListener list is managed in such way so that event listeners can be added and removed          
+     *
+     *  cc.eventManager is a singleton object which manages event listener subscriptions and event dispatching.
+     *
+     *  The EventListener list is managed in such way so that event listeners can be added and removed
      *  while events are being dispatched.
-     * 
+     *
      * @class
      * @name cc.eventManager
      */
@@ -622,11 +622,11 @@ declare namespace cc {
         public resumeTarget(node:Node, recursive:boolean):void;
 
         /**
-         * 
-         * Adds a event listener for a specified event.                                                                                                            
-         * if the parameter "nodeOrPriority" is a node, it means to add a event listener for a specified event with the priority of scene graph.                   
-         * if the parameter "nodeOrPriority" is a Number, it means to add a event listener for a specified event with the fixed priority.                          
-         * 
+         *
+         * Adds a event listener for a specified event.
+         * if the parameter "nodeOrPriority" is a node, it means to add a event listener for a specified event with the priority of scene graph.
+         * if the parameter "nodeOrPriority" is a Number, it means to add a event listener for a specified event with the fixed priority.
+         *
          * @param {cc.EventListener|Object} listener The listener of a specified event or a object of some event parameters.
          * @param {cc.Node|Number} nodeOrPriority The priority of the listener is based on the draw order of this node or fixedPriority The fixed priority of the listener.
          * @note  The priority of scene graph will be fixed value 0. So the order of listener item in the vector will be ' <0, scene graph (0 priority), >0'.

@@ -19,8 +19,8 @@ declare namespace cc {
 
         /**
          * Cache the image data
-         * @param path 
-         * @param texture 
+         * @param path
+         * @param texture
          */
         cacheImage(path: string, texture: (Image | HTMLImageElement | HTMLCanvasElement)): void;
 
@@ -28,7 +28,7 @@ declare namespace cc {
          * @return string
          */
         description(): string;
-        
+
         /**
          * Output to cc.log the current contents of this TextureCache
          * This will attempt to calculate the size of each texture, and the total texture memory in use.
@@ -36,8 +36,8 @@ declare namespace cc {
         dumpCachedTextureInfo(): void;
 
         /**
-         * @param texture 
-         * @example 
+         * @param texture
+         * @example
          * //var key = cc.textureCache.getKeyByTexture(texture);
          */
         getKeyByTexture(texture: Image): (String | null);
@@ -59,13 +59,13 @@ declare namespace cc {
 
         /**
          * Deletes a texture from the cache given a texture
-         * @param texture 
+         * @param texture
          */
         removeTexture(texture: Image);
 
         /**
          * Deletes a texture from the cache given a its key name
-         * @param textureKeyName 
+         * @param textureKeyName
          * @example
          * `cc.textureCache.removeTexture("hello.png");`
          */

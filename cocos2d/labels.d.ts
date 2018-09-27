@@ -37,7 +37,6 @@ declare namespace cc {
      * var myLabel = new cc.LabelAtlas('Text to display', 'CharMapFile.plist‘);
      */
     export class LabelAtlas extends AtlasNode implements Label {
-
         //public opacity:number;
         //public color:Color;
         public string:string;
@@ -262,7 +261,6 @@ declare namespace cc {
          * @return {String}
          */
         public getFntFile():string;
-
     }
 
     export namespace fnt {

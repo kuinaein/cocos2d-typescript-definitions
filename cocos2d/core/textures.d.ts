@@ -546,12 +546,12 @@ declare namespace cc {
     //        }
     //
     //        /**
-    //         * 
-    //         * This class allows to easily create OpenGL or Canvas 2D textures from images, text or raw data.                                    
-    //         * The created cc.Texture2D object will always have power-of-two dimensions.                                                
-    //         * Depending on how you create the cc.Texture2D object, the actual image area of the texture might be smaller than the texture dimensions 
-    //         *  i.e. "contentSize" != (pixelsWide, pixelsHigh) and (maxS, maxT) != (1.0, 1.0).                                           
-    //         * Be aware that the content of the generated textures will be upside-down! 
+    //         *
+    //         * This class allows to easily create OpenGL or Canvas 2D textures from images, text or raw data.
+    //         * The created cc.Texture2D object will always have power-of-two dimensions.
+    //         * Depending on how you create the cc.Texture2D object, the actual image area of the texture might be smaller than the texture dimensions
+    //         *  i.e. "contentSize" != (pixelsWide, pixelsHigh) and (maxS, maxT) != (1.0, 1.0).
+    //         * Be aware that the content of the generated textures will be upside-down!
     //         * @name cc.Texture2D
     //         * @class
     //         * @extends cc.Class
@@ -608,13 +608,13 @@ declare namespace cc {
     // File: cocos2d/core/textures/CCTextureAtlas.js
     ////////////////////////////////////////////////////////////////////////////////
     /**
-     * A class that implements a Texture Atlas. 
-     * Supported features: 
-     * The atlas file can be a PNG, JPG. 
-     * Quads can be updated in runtime 
-     * Quads can be added in runtime 
-     * Quads can be removed in runtime 
-     * Quads can be re-ordered in runtime 
+     * A class that implements a Texture Atlas.
+     * Supported features:
+     * The atlas file can be a PNG, JPG.
+     * Quads can be updated in runtime
+     * Quads can be added in runtime
+     * Quads can be removed in runtime
+     * Quads can be re-ordered in runtime
      * The TextureAtlas capacity can be increased or decreased in runtime.
      * @class
      * @extends cc.Class
@@ -805,7 +805,7 @@ declare namespace cc {
         public resizeCapacity(newCapacity:number):boolean;
 
         /**
-         * Used internally by CCParticleBatchNode                                    
+         * Used internally by CCParticleBatchNode
          * don't use this unless you know what you're doing
          * @param {Number} amount
          */
@@ -820,7 +820,7 @@ declare namespace cc {
         public moveQuadsFromIndex(oldIndex:number, amount:number, newIndex:number):void;
 
         /**
-         * Ensures that after a realloc quads are still empty                                
+         * Ensures that after a realloc quads are still empty
          * Used internally by CCParticleBatchNode
          * @param {Number} index
          * @param {Number} amount

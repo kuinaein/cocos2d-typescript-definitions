@@ -102,9 +102,9 @@ declare namespace cc {
     export const UINT_MAX:number;
 
     /**
-     * 
+     *
      *     Linear interpolation between 2 numbers, the ratio sets how much it is biased to each end
-     * 
+     *
      * @param {Number} a number A
      * @param {Number} b number B
      * @param {Number} r ratio between 0 and 1
@@ -174,33 +174,33 @@ declare namespace cc {
     export function nodeDrawSetup(node:Node):void;
 
     /**
-     * 
+     *
      *     GL states that are enabled:
      *       - GL_TEXTURE_2D
      *       - GL_VERTEX_ARRAY
      *       - GL_TEXTURE_COORD_ARRAY
      *       - GL_COLOR_ARRAY
-     * 
+     *
      * @function
      */
     export function enableDefaultGLStates():void;
 
     /**
-     * 
+     *
      *   Disable default GL states:
      *     - GL_TEXTURE_2D
      *     - GL_TEXTURE_COORD_ARRAY
      *     - GL_COLOR_ARRAY
-     * 
+     *
      * @function
      */
     export function disableDefaultGLStates();
 
     /**
-     * 
+     *
      *  Increments the GL Draws counts by one.
      *  The number of calls per frame are displayed on the screen when the CCDirector's stats are enabled.
-     * 
+     *
      * @param {Number} addNumber
      * @function
      */
@@ -213,10 +213,10 @@ declare namespace cc {
     export const FLT_EPSILON:number;
 
     /**
-     * 
+     *
      *     On Mac it returns 1;
      *     On iPhone it returns 2 if RetinaDisplay is On. Otherwise it returns 1
-     * 
+     *
      * @return {Number}
      * @function
      */
@@ -741,42 +741,42 @@ declare namespace cc {
      * @constant
      * @type Number
      */
-    export var TEXT_ALIGNMENT_LEFT;
+    export const TEXT_ALIGNMENT_LEFT;
 
     /**
      * text alignment : center
      * @constant
      * @type Number
      */
-    export var TEXT_ALIGNMENT_CENTER;
+    export const TEXT_ALIGNMENT_CENTER;
 
     /**
      * text alignment : right
      * @constant
      * @type Number
      */
-    export var TEXT_ALIGNMENT_RIGHT;
+    export const TEXT_ALIGNMENT_RIGHT;
 
     /**
      * text alignment : top
      * @constant
      * @type Number
      */
-    export var VERTICAL_TEXT_ALIGNMENT_TOP;
+    export const VERTICAL_TEXT_ALIGNMENT_TOP;
 
     /**
      * text alignment : center
      * @constant
      * @type Number
      */
-    export var VERTICAL_TEXT_ALIGNMENT_CENTER;
+    export const VERTICAL_TEXT_ALIGNMENT_CENTER;
 
     /**
      * text alignment : bottom
      * @constant
      * @type Number
      */
-    export var VERTICAL_TEXT_ALIGNMENT_BOTTOM;
+    export const VERTICAL_TEXT_ALIGNMENT_BOTTOM;
 
     //+---------- Function definitions ----------+//
     /**
@@ -1304,15 +1304,15 @@ declare namespace cc {
 
     /**
      * cc.view is the singleton object which represents the game window.
-     * It's main task include: 
+     * It's main task include:
      *  - Apply the design resolution policy
      *  - Provide interaction with the window, like resize event on web, retina display support, etc...
      *  - Manage the game view port which can be different with the window
      *  - Manage the content scale and translation
-     * 
+     *
      * Since the cc.view is a singleton, you don't need to call any constructor or create functions,
      * the standard way to use it is by calling:
-     *  - cc.view.methodName(); 
+     *  - cc.view.methodName();
      * @class
      * @name cc.view
      * @extend cc.Class
@@ -1325,14 +1325,14 @@ declare namespace cc {
         //public constructor();
 
         /**
-         * 
-         * Sets view's target-densitydpi for android mobile browser. it can be set to:           
-         *   1. cc.DENSITYDPI_DEVICE, value is "device-dpi"                                      
-         *   2. cc.DENSITYDPI_HIGH, value is "high-dpi"  (default value)                         
-         *   3. cc.DENSITYDPI_MEDIUM, value is "medium-dpi" (browser's default value)            
-         *   4. cc.DENSITYDPI_LOW, value is "low-dpi"                                            
-         *   5. Custom value, e.g: "480"                                                         
-         * 
+         *
+         * Sets view's target-densitydpi for android mobile browser. it can be set to:
+         *   1. cc.DENSITYDPI_DEVICE, value is "device-dpi"
+         *   2. cc.DENSITYDPI_HIGH, value is "high-dpi"  (default value)
+         *   3. cc.DENSITYDPI_MEDIUM, value is "medium-dpi" (browser's default value)
+         *   4. cc.DENSITYDPI_LOW, value is "low-dpi"
+         *   5. Custom value, e.g: "480"
+         *
          * @param {String} densityDPI
          */
         public setTargetDensityDPI(densityDPI:string):void;
@@ -1352,7 +1352,7 @@ declare namespace cc {
 
         /**
          * Sets the callback function for cc.view's resize action,
-         * this callback will be invoked before applying resolution policy, 
+         * this callback will be invoked before applying resolution policy,
          * so you can do any additional modifications within the callback.
          * Useful only on web.
          * @param {Function|null} callback The callback function
@@ -1519,7 +1519,7 @@ declare namespace cc {
 
         /**
          * Sets the resolution policy with designed view size in points.
-         * The resolution policy include: 
+         * The resolution policy include:
          * [1] ResolutionExactFit       Fill screen by stretch-to-fit: if the design resolution ratio of width to height is different from the screen resolution ratio, your game view will be stretched.
          * [2] ResolutionNoBorder       Full screen without black border: if the design resolution ratio of width to height is different from the screen resolution ratio, two areas of your game view will be cut.
          * [3] ResolutionShowAll        Full screen with black border: if the design resolution ratio of width to height is different from the screen resolution ratio, two black borders will be shown.
@@ -1640,7 +1640,6 @@ declare namespace cc {
      * @extends cc.Class
      */
     export class ContainerStrategy extends Class {
-
         /**
          * Strategy that scale proportionally the container's size to frame's size
          */
@@ -1683,7 +1682,6 @@ declare namespace cc {
      * @extends cc.Class
      */
     export class ContentStrategy extends Class {
-
         /**
          * Strategy to scale the content's size to container's size, non proportional
          */

@@ -62,7 +62,6 @@ declare namespace jsb {
     }
 
 
-
     /**
      * ATTENTION: USE jsb.fileUtils INSTEAD OF jsb.FileUtils.
      * jsb.fileUtils is the native file utils' singleton object,
@@ -76,7 +75,6 @@ declare namespace jsb {
     export const fileUtils:FileUtils;
 
     export class FileUtils {
-
         /**
          * @function fullPathForFilename
          * @param {String} filename
@@ -334,7 +332,6 @@ declare namespace jsb {
          * @return {number}
          */
         public getPercent():number;
-
     }
 
     /**
@@ -359,10 +356,11 @@ declare namespace jsb {
     }
 
     /**
-     * @class
      * jsb.AssetsManager is the native AssetsManager for your game resources or scripts.
      * please refer to this document to know how to use it: http://www.cocos2d-x.org/docs/manual/framework/html5/v3/assets-manager/en
      * Only available in JSB
+     *
+     * @class
      */
     export class AssetsManager extends cc.Class {
         /**

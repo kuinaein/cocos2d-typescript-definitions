@@ -41,7 +41,8 @@ declare namespace cc {
         public ctor(stencil?:Node):void;
 
         /**
-         * Initialization of the node, please do not call this function by yourself, you should pass the parameters to constructor to initialize it .
+         * Initialization of the node, please do not call this function by yourself, you should pass the parameters to constructor to initialize it
+         * .
          * @function
          * @param {cc.Node} [stencil=null]
          */

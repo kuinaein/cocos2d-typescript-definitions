@@ -291,7 +291,6 @@ declare namespace cc {
      * var menuItem = new cc.MenuItemAtlasFont(param1,param2...);
      */
     export class MenuItemAtlasFont extends MenuItemLabel {
-
         /**
          * the contructor of cc.MenuItemAtlasFont
          * @param {String} value
@@ -492,7 +491,7 @@ declare namespace cc {
      * - unselected image
      * - selected image
      * - disabled image
-     * 
+     *
      * For best results try that all images are of the same size
      * @class
      * @extends cc.MenuItemSprite
@@ -551,7 +550,6 @@ declare namespace cc {
          * @param {cc.SpriteFrame} frame
          */
         public setDisabledSpriteFrame(frame:SpriteFrame):void;
-
     }
 
     /**

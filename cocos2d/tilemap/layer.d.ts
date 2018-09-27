@@ -48,13 +48,13 @@ declare namespace cc {
      * @member {cc.TMXTilesetInfo} tileset
      */
     tileset: TMXTilesetInfo;
-        
+
     /**
      * Layer orientation, which is the same as the map orientation
      * @member {number} layerOrientation
      */
     layerOrientation: number;
-    
+
     /**
      * properties from the layer. They can be added using Tiled
      * @member {any[]} properties
@@ -66,7 +66,7 @@ declare namespace cc {
      * @member {string} layerName
      */
     layerName: string;
-    
+
     /**
      * Texture of cc.SpriteBatchNode
      * @member {cc.Texture2D} texture
@@ -105,7 +105,7 @@ declare namespace cc {
      * @param {cc.TMXMapInfo} mapInfo
      */
     constructor(tilesetInfo: TMXTilesetInfo, layerInfo: TMXLayerInfo, mapInfo: TMXMapInfo);
-    
+
     /**
      * Sets the untransformed size of the TMXLayer.
      * @override
@@ -222,7 +222,7 @@ declare namespace cc {
      * Creates the tiles
      */
     setupTiles(): void;
-    
+
     /**
      * Remove child
      * @param  {cc.Sprite} sprite
