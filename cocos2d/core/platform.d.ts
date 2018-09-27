@@ -48,8 +48,10 @@ declare namespace cc {
      * MIT Licensed.
      */
     export class Class {
+        public static extend<T>(this: T, props): T;
         public ctor():void;
         public description():string;
+        public _super(...args): any;
     }
 
     // +---------------------------------------------------------------------------
@@ -785,6 +787,7 @@ declare namespace cc {
      */
     export function blendFuncDisable():BlendFunc;
 
+    export const color: {
     /**
      * Generate a color object based on multiple forms of parameters
      * @example
@@ -803,7 +806,7 @@ declare namespace cc {
      * @param {String|cc.Color} color
      * @return {cc.Color}
      */
-    export function color(color:Color|string):Color;
+    (color:Color|string): Color;
 
     /**
      * Generate a color object based on multiple forms of parameters
@@ -826,7 +829,18 @@ declare namespace cc {
      * @param {Number} [alpha=255]
      * @return {cc.Color}
      */
-    export function color(red:number, green:number, blue:number, alpha?:number):Color;
+    (red:number, green:number, blue:number, alpha?:number):Color;
+
+    readonly WHITE: Color;
+    readonly YELLOW: Color;
+    readonly BLUE: Color;
+    readonly GREEN: Color;
+    readonly RED: Color;
+    readonly MAGENTA: Color;
+    readonly BLACK: Color;
+    readonly ORANGE: Color;
+    readonly GRAY: Color;
+    };
 
     /**
      * returns true if both ccColor3B are equal. Otherwise it returns false.
